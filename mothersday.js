@@ -29,6 +29,7 @@ setTimeout(() => {
 }, 3000);
 
 const arrow = document.querySelector(".ico");
+
 function checkScroll() {
     const scrollTop = window.scrollY;
     const windowHeight = window.innerHeight;
@@ -40,6 +41,7 @@ function checkScroll() {
         arrow.classList.remove("hide-arrow");
     }
 }
+
 window.addEventListener("scroll", checkScroll);
 
 let currentThumbnail = null;
@@ -86,6 +88,7 @@ function openLightbox(img) {
         lightboxImg.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scaleX}, ${scaleY})`;
     });
 }
+
 function closeLightbox() {
     if (!currentThumbnail) return;
   
