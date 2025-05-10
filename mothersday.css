@@ -115,6 +115,12 @@ body{
     transform: scale(1.05);
 }
 
+#credits{
+    font-family: Roboto;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
 .slide-up {
     animation: slideUp 0.6s forwards;
 }
