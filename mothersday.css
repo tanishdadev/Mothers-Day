@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --circle-w: 60px;
     --circle-bg: #fff;
@@ -11,14 +12,17 @@
     --bezier-bounce: cubic-bezier(0.87, -0.41, 0.19, 1.44);
     --anim-timing: 3s;
 }
+
 body{
     background-color: #FFDBDB;
 }
+
 #loading{
     font-family: Amatic SC;
     font-size: 75px;
     padding-right: 20px;
 }
+
 .containerone{
     display: flex;
     justify-content: center;
@@ -27,6 +31,7 @@ body{
     gap: 10px;
     transition: opacity 0.5s ease;
 }
+
 .dot{
     width: 20px;
     height: 20px;
@@ -34,14 +39,86 @@ body{
     background-color: #7D5260;
     will-change: transform;
 }
+
 #main-content{
     display: none;
     text-align: center;
     margin-top: 150px;
 }
+
+#letterparent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+}
+
+#letter{
+    display: block;
+    height: 25vw;
+    width: 35vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.letter-content{
+    font-family: QuickSand;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+#text{
+    font-family: Pacifico;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+  
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+#lightbox-img {
+    position: fixed;
+    z-index: 10000;
+    will-change: transform;
+    cursor: zoom-out;
+}
+
+.thumbnail {
+    width: 180px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+  
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
 .slide-up {
     animation: slideUp 0.6s forwards;
 }
+
 @keyframes slideUp {
     0% {
         transform: translateY(100px);
@@ -52,6 +129,7 @@ body{
         opacity: 1;
     }
 }
+
 .ico {
     position: fixed;
     bottom: 30px;
